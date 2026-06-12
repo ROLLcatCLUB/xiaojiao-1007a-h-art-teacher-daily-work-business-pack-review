@@ -1,0 +1,20 @@
+{
+  "stage": "1007C_ART_TEACHER_WORK_OBJECT_SCHEMA_FIXTURE",
+  "final_status": "XIAOJIAO_ART_TEACHER_WORK_OBJECT_SCHEMA_FIXTURE_PASS",
+  "zip_path": "docs/audit_packages/xiaojiao_art_teacher_work_object_schema_fixture_1007C.zip",
+  "zip_sha256": "EXTERNAL_RECOMPUTATION_RECORDED_IN_README",
+  "zip_entry_count": 7,
+  "zip_entries": [
+    "docs/foundation/xiaojiao_art_teacher_work_object_schema_fixture_1007C.md",
+    "docs/foundation/xiaojiao_art_teacher_work_object_schema_fixture_1007C.json",
+    "samples/xiaojiao_art_teacher_work_object_schema_fixture_1007C/art_teacher_work_object_schema_fixture_1007C.json",
+    "scripts/validate_xiaojiao_art_teacher_work_object_schema_fixture_1007C.py",
+    "docs/audit/xiaojiao_art_teacher_work_object_schema_fixture_1007C_result.json",
+    "docs/audit/xiaojiao_art_teacher_work_object_schema_fixture_1007C_report.md",
+    "docs/audit_packages/xiaojiao_art_teacher_work_object_schema_fixture_1007C_manifest.json"
+  ],
+  "manifest_minus_zip": [],
+  "zip_minus_manifest": [],
+  "forbidden_files_present": [],
+  "marker": "ALL_1007C_ART_TEACHER_WORK_OBJECT_SCHEMA_FIXTURE_CHECKS_OK"
+}
