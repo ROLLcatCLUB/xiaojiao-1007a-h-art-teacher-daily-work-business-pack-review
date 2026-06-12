@@ -1,0 +1,185 @@
+{
+  "stage": "1007B_ART_TEACHER_BUSINESS_PACK_REGISTRY_FIXTURE",
+  "final_status": "XIAOJIAO_ART_TEACHER_BUSINESS_PACK_REGISTRY_FIXTURE_PASS",
+  "package_type": "business_pack_registry",
+  "current_product_identity": "teacher_work_state_driven_intelligent_organization_system",
+  "inherits_from": [
+    "1001_STATE_DRIVEN_INTELLIGENCE_ENGINE_FIXTURE_BASELINE_PASS",
+    "1000F_I_MODEL_CANDIDATE_RESOURCE_CONTEXT_FIXTURE_BASELINE_PASS",
+    "1002B_PROGRESSIVE_SURFACE_MODE_AND_BUSINESS_PACK_LAYOUT_PRESET_FIXTURE_PASS",
+    "1005A_PRODUCT_POSITIONING_AND_DIFFERENTIATION_CONTRACT_PASS",
+    "1006A_H_MINIMUM_RUNTIME_FOUNDATION_END_TO_END_DRY_RUN_PASS"
+  ],
+  "business_line": "art_teacher_daily_work",
+  "primary_business_pack": "art_teacher_daily_work_pack",
+  "stage_scope": {
+    "registry_id": "art_teacher_business_pack_registry_1007B",
+    "business_packs": [
+      {
+        "role_scope": "art_teacher",
+        "default_review_gate_policy": "teacher_review_required_for_generated_patch",
+        "forbidden_as_default": false,
+        "business_pack_id": "art_teacher_daily_work_pack",
+        "display_name": "美术教师日常工作",
+        "supported_surface_modes": [
+          "light_entry",
+          "focus_surface"
+        ],
+        "work_object_types": [
+          "today_work_items",
+          "art_lesson_design"
+        ],
+        "allowed_actions": [
+          "view_today_work",
+          "open_lesson_focus",
+          "inspect_pending_lesson_draft",
+          "defer_current_item"
+        ],
+        "default_render_policy": "state_driven_light_to_focus",
+        "default_context_policy": "work_state_minimal",
+        "model_candidate_policy": "none_for_view_and_confirm",
+        "resource_context_policy": "resource_refs_only",
+        "telemetry_policy": "observation_metrics_only"
+      },
+      {
+        "role_scope": "art_teacher",
+        "default_review_gate_policy": "teacher_review_required_for_generated_patch",
+        "forbidden_as_default": false,
+        "business_pack_id": "art_lesson_design_pack",
+        "display_name": "美术课时设计",
+        "supported_surface_modes": [
+          "focus_surface"
+        ],
+        "work_object_types": [
+          "art_lesson_design"
+        ],
+        "allowed_actions": [
+          "inspect_pending_lesson_draft",
+          "confirm_lesson_draft",
+          "revise_lesson_section_candidate"
+        ],
+        "default_render_policy": "primary_lesson_design",
+        "default_context_policy": "lesson_design_trimmed_context",
+        "model_candidate_policy": "section_revision_candidate_only",
+        "resource_context_policy": "resource_refs_if_linked",
+        "telemetry_policy": "draft_acceptance_and_revision_metrics"
+      },
+      {
+        "role_scope": "art_teacher",
+        "default_review_gate_policy": "teacher_review_required_for_generated_patch",
+        "forbidden_as_default": false,
+        "business_pack_id": "art_handout_pack",
+        "display_name": "美术学习单",
+        "supported_surface_modes": [
+          "focus_surface"
+        ],
+        "work_object_types": [
+          "art_handout"
+        ],
+        "allowed_actions": [
+          "generate_handout_candidate",
+          "create_work_object_patch",
+          "enter_teacher_review_gate"
+        ],
+        "default_render_policy": "supporting_object",
+        "default_context_policy": "handout_context_pack_policy",
+        "model_candidate_policy": "candidate_envelope_only",
+        "resource_context_policy": "lesson_resource_refs",
+        "telemetry_policy": "candidate_to_patch_review_metrics"
+      },
+      {
+        "role_scope": "art_teacher",
+        "default_review_gate_policy": "teacher_review_required_for_generated_patch",
+        "forbidden_as_default": false,
+        "business_pack_id": "art_rubric_pack",
+        "display_name": "美术评价量规",
+        "supported_surface_modes": [
+          "focus_surface"
+        ],
+        "work_object_types": [
+          "art_rubric"
+        ],
+        "allowed_actions": [
+          "generate_rubric_candidate"
+        ],
+        "default_render_policy": "supporting_object",
+        "default_context_policy": "rubric_context_pack_policy",
+        "model_candidate_policy": "candidate_envelope_only",
+        "resource_context_policy": "lesson_objectives_only",
+        "telemetry_policy": "review_gate_metrics"
+      },
+      {
+        "role_scope": "art_teacher",
+        "default_review_gate_policy": "teacher_review_required_for_generated_patch",
+        "forbidden_as_default": false,
+        "business_pack_id": "art_resource_support_pack",
+        "display_name": "美术资源支撑",
+        "supported_surface_modes": [
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "work_object_types": [
+          "art_resource_ref"
+        ],
+        "allowed_actions": [
+          "open_resource_picker",
+          "attach_resource_ref"
+        ],
+        "default_render_policy": "drawer_or_picker_not_default_surface",
+        "default_context_policy": "resource_reference_policy",
+        "model_candidate_policy": "none",
+        "resource_context_policy": "support_layer_only",
+        "telemetry_policy": "resource_usage_metrics"
+      },
+      {
+        "role_scope": "art_teacher",
+        "default_review_gate_policy": "teacher_review_required_for_generated_patch",
+        "forbidden_as_default": false,
+        "business_pack_id": "art_work_review_pack",
+        "display_name": "美术作品评价占位",
+        "supported_surface_modes": [
+          "future_analysis_board_placeholder_only"
+        ],
+        "work_object_types": [],
+        "allowed_actions": [],
+        "default_render_policy": "placeholder_only",
+        "default_context_policy": "not_in_1007",
+        "model_candidate_policy": "not_in_1007",
+        "resource_context_policy": "not_in_1007",
+        "telemetry_policy": "placeholder_only"
+      }
+    ],
+    "exclusions_verified": [
+      "teaching_plan_pack_not_grid_studio",
+      "resource_library_not_default_surface",
+      "classroom_teaching_studio_not_in_pilot",
+      "student_evaluation_not_in_pilot"
+    ]
+  },
+  "hard_boundaries": {
+    "provider_called": false,
+    "model_called": false,
+    "api_key_configured": false,
+    "real_database_written": false,
+    "database_written": false,
+    "real_memory_written": false,
+    "memory_written": false,
+    "Feishu_written": false,
+    "formal_export_created": false,
+    "real_frontend_runtime_modified": false,
+    "real_frontend_modified": false,
+    "teacher_control_runtime_entered": false,
+    "public_display_runtime_entered": false,
+    "student_side_runtime_entered": false,
+    "production_generation_performed": false,
+    "formal_writeback_performed": false,
+    "formal_apply_performed": false,
+    "real_classroom_delivery_entered": false,
+    "real_resource_library_connected": false,
+    "production_dependency_installed": false,
+    "teacher_review_required_stop": true
+  },
+  "stop_rule": "Do not enter real art teacher business apply; stop at teacher_review_required before formal apply.",
+  "next_stage": "1007B_COMPLETE_CONTINUE_WITHIN_1007_PACKAGE"
+}
