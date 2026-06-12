@@ -1,0 +1,67 @@
+{
+  "schema_registry_id": "art_teacher_work_object_schema_1007C",
+  "work_objects": {
+    "today_work_items": [
+      "date",
+      "teacher_id",
+      "lesson_refs",
+      "pending_items",
+      "priority_item",
+      "surface_mode=light_entry"
+    ],
+    "art_lesson_design": [
+      "lesson_id",
+      "grade",
+      "class_id",
+      "lesson_title",
+      "unit_ref",
+      "objectives",
+      "lesson_structure",
+      "materials",
+      "draft_status",
+      "review_status",
+      "linked_objects"
+    ],
+    "art_handout": [
+      "handout_id",
+      "lesson_ref",
+      "learning_goal",
+      "task_items",
+      "student_prompt",
+      "difficulty_level",
+      "draft_status",
+      "review_status"
+    ],
+    "art_rubric": [
+      "rubric_id",
+      "lesson_ref",
+      "dimensions",
+      "levels",
+      "teacher_review_required"
+    ],
+    "art_resource_ref": [
+      "resource_id",
+      "resource_type",
+      "title",
+      "source",
+      "tags",
+      "linked_work_object",
+      "usage_context"
+    ],
+    "work_object_patch": [
+      "patch_id",
+      "target_work_object",
+      "patch_type",
+      "changed_fields",
+      "source_candidate_request_id",
+      "review_status=pending_teacher_review",
+      "applied=false",
+      "rollback_available=true"
+    ]
+  },
+  "invariants": [
+    "candidate_result_to_work_object_patch_only",
+    "no_direct_write_to_art_lesson_design_or_art_handout_or_art_rubric",
+    "teacher_review_required_present_for_generated_or_reviewable_objects"
+  ]
+}
