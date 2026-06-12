@@ -1,0 +1,58 @@
+{
+  "scenario_id": "art_teacher_daily_work_wednesday_week3",
+  "teacher_profile_stub": {
+    "teacher_id": "teacher_zhang_art_001",
+    "display_name": "张老师",
+    "role": "美术教师",
+    "grades": [
+      "三年级",
+      "四年级"
+    ]
+  },
+  "today_schedule": {
+    "date": "2026-06-17",
+    "weekday": "Wednesday",
+    "term_week": 3,
+    "lessons": [
+      "三年级 2 班 美术",
+      "四年级 1 班 色彩的感觉",
+      "四年级 3 班 美术"
+    ]
+  },
+  "current_work_state": {
+    "priority_item": "lesson_L004_color_feeling",
+    "pending_items": [
+      "lesson_design_draft_pending_review",
+      "handout_missing"
+    ]
+  },
+  "lesson_design_draft": {
+    "lesson_id": "lesson_L004_color_feeling",
+    "grade": "四年级",
+    "class_id": "四年级1班",
+    "lesson_title": "色彩的感觉",
+    "draft_status": "pending_teacher_review",
+    "review_status": "pending"
+  },
+  "linked_handout_missing": true,
+  "structured_suggestion": {
+    "text": "四年级第2课《色彩的感觉》课时设计草稿待确认，学习单还未生成。",
+    "attach_to": "art_lesson_design.lesson_L004_color_feeling"
+  },
+  "available_actions": [
+    "open_lesson_focus",
+    "confirm_lesson_draft",
+    "generate_handout_candidate",
+    "defer_current_item"
+  ],
+  "render_directive_expected": "focus_surface_lesson_directive",
+  "covered_steps": [
+    "open_workbench",
+    "view_today",
+    "pending_draft_detected",
+    "open_lesson_focus",
+    "structured_suggestion_attached",
+    "generate_handout_candidate_requested",
+    "teacher_review_required_stop"
+  ]
+}
