@@ -1,0 +1,118 @@
+{
+  "overall_package": "1007A_TO_1007H_ART_TEACHER_DAILY_WORK_BUSINESS_PACK_CAPABILITY_REGISTRATION_PACKAGE",
+  "overall_status": "1007A_H_ART_TEACHER_DAILY_WORK_BUSINESS_PACK_CAPABILITY_REGISTRATION_BASELINE_PASS",
+  "stages": [
+    {
+      "stage": "1007A",
+      "final_status": "XIAOJIAO_ART_TEACHER_DAILY_WORK_PILOT_SCOPE_CONTRACT_PASS",
+      "zip_entry_count": 7,
+      "zip_sha256": "6114FEB3CF098EBAB69C71C6FCAC01F5F95EF8D5BA15CE157961A3C0F87E0BE9",
+      "slug": "xiaojiao_art_teacher_daily_work_pilot_scope_contract_1007A",
+      "validator_no_arg": "PASS",
+      "validator_root": "PASS",
+      "manifest_minus_zip": [],
+      "zip_minus_manifest": []
+    },
+    {
+      "stage": "1007B",
+      "final_status": "XIAOJIAO_ART_TEACHER_BUSINESS_PACK_REGISTRY_FIXTURE_PASS",
+      "zip_entry_count": 7,
+      "zip_sha256": "45E32AC6AE95CAD0FC8B517EF28559612E1380DA153D93A1394FD9F2781D0A1D",
+      "slug": "xiaojiao_art_teacher_business_pack_registry_fixture_1007B",
+      "validator_no_arg": "PASS",
+      "validator_root": "PASS",
+      "manifest_minus_zip": [],
+      "zip_minus_manifest": []
+    },
+    {
+      "stage": "1007C",
+      "final_status": "XIAOJIAO_ART_TEACHER_WORK_OBJECT_SCHEMA_FIXTURE_PASS",
+      "zip_entry_count": 7,
+      "zip_sha256": "FD1167BBE5E1369BA2300A7B62A8BDCE4679EB6084CBAC8846DF596925D8E4F5",
+      "slug": "xiaojiao_art_teacher_work_object_schema_fixture_1007C",
+      "validator_no_arg": "PASS",
+      "validator_root": "PASS",
+      "manifest_minus_zip": [],
+      "zip_minus_manifest": []
+    },
+    {
+      "stage": "1007D",
+      "final_status": "XIAOJIAO_ART_TEACHER_CAPABILITY_REGISTRY_FIXTURE_PASS",
+      "zip_entry_count": 7,
+      "zip_sha256": "E5A064AA334DD7AFD3E9369D22433EBBE3F16E309BA2BCB180772E9F7BB552FA",
+      "slug": "xiaojiao_art_teacher_capability_registry_fixture_1007D",
+      "validator_no_arg": "PASS",
+      "validator_root": "PASS",
+      "manifest_minus_zip": [],
+      "zip_minus_manifest": []
+    },
+    {
+      "stage": "1007E",
+      "final_status": "XIAOJIAO_ART_TEACHER_DAILY_WORK_SCENARIO_FIXTURE_PASS",
+      "zip_entry_count": 7,
+      "zip_sha256": "3324280BC145915BB3A737CBB68CEDEAC391A1B895F35D41BF0C829D7BD6A206",
+      "slug": "xiaojiao_art_teacher_daily_work_scenario_fixture_1007E",
+      "validator_no_arg": "PASS",
+      "validator_root": "PASS",
+      "manifest_minus_zip": [],
+      "zip_minus_manifest": []
+    },
+    {
+      "stage": "1007F",
+      "final_status": "XIAOJIAO_ART_TEACHER_MODEL_CANDIDATE_POLICY_AND_REVIEW_GATE_FIXTURE_PASS",
+      "zip_entry_count": 7,
+      "zip_sha256": "B56ACAA9CD07F2A52FD3066596BC5C344C614421D137F78DD6B49F12EDEC7558",
+      "slug": "xiaojiao_art_teacher_model_candidate_policy_and_review_gate_fixture_1007F",
+      "validator_no_arg": "PASS",
+      "validator_root": "PASS",
+      "manifest_minus_zip": [],
+      "zip_minus_manifest": []
+    },
+    {
+      "stage": "1007G",
+      "final_status": "XIAOJIAO_ART_TEACHER_RENDER_DIRECTIVE_AND_SURFACE_MODE_FIXTURE_PASS",
+      "zip_entry_count": 7,
+      "zip_sha256": "B6343C1248989D054D22F6357BCBB8DFECAC1144B373A2888797111CAD5D88E8",
+      "slug": "xiaojiao_art_teacher_render_directive_and_surface_mode_fixture_1007G",
+      "validator_no_arg": "PASS",
+      "validator_root": "PASS",
+      "manifest_minus_zip": [],
+      "zip_minus_manifest": []
+    },
+    {
+      "stage": "1007H",
+      "final_status": "XIAOJIAO_ART_TEACHER_DAILY_WORK_VERTICAL_SLICE_DRY_RUN_PASS",
+      "zip_entry_count": 7,
+      "zip_sha256": "93CF17F84EB1667E40D46E1433B3107D26A8B76B437169A5E8D3AA487CADD2DC",
+      "slug": "xiaojiao_art_teacher_daily_work_vertical_slice_dry_run_1007H",
+      "validator_no_arg": "PASS",
+      "validator_root": "PASS",
+      "manifest_minus_zip": [],
+      "zip_minus_manifest": []
+    }
+  ],
+  "stop": "1007H_REVIEW_PENDING_BEFORE_REAL_ART_TEACHER_BUSINESS_APPLY",
+  "boundary_flags": {
+    "provider_called": false,
+    "model_called": false,
+    "api_key_configured": false,
+    "real_database_written": false,
+    "database_written": false,
+    "real_memory_written": false,
+    "memory_written": false,
+    "Feishu_written": false,
+    "formal_export_created": false,
+    "real_frontend_runtime_modified": false,
+    "real_frontend_modified": false,
+    "teacher_control_runtime_entered": false,
+    "public_display_runtime_entered": false,
+    "student_side_runtime_entered": false,
+    "production_generation_performed": false,
+    "formal_writeback_performed": false,
+    "formal_apply_performed": false,
+    "real_classroom_delivery_entered": false,
+    "real_resource_library_connected": false,
+    "production_dependency_installed": false,
+    "teacher_review_required_stop": true
+  }
+}
