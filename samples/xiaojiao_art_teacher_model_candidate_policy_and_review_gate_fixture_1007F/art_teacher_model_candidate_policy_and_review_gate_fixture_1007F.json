@@ -1,0 +1,56 @@
+{
+  "policy_registry_id": "art_teacher_model_candidate_policy_1007F",
+  "policies": {
+    "handout_candidate_policy": {
+      "inputs": [
+        "art_lesson_design.objectives",
+        "lesson_structure",
+        "grade",
+        "difficulty_preference_candidate",
+        "resource_refs_if_available"
+      ],
+      "output_schema": [
+        "title",
+        "learning_goal",
+        "task_items",
+        "student_prompt",
+        "self_check",
+        "difficulty_level",
+        "teacher_review_required=true"
+      ]
+    },
+    "rubric_candidate_policy": {
+      "inputs": [
+        "lesson_objectives",
+        "expected_student_work_type",
+        "evaluation_dimensions"
+      ],
+      "output_schema": [
+        "dimensions",
+        "level_descriptors",
+        "teacher_review_required=true"
+      ]
+    },
+    "lesson_section_revision_policy": {
+      "inputs": [
+        "section_id",
+        "original_section_text",
+        "revision_intent",
+        "time_constraint"
+      ],
+      "output_schema": [
+        "revised_section_candidate",
+        "revision_reason",
+        "teacher_review_required=true"
+      ]
+    }
+  },
+  "assertions": {
+    "provider_called": false,
+    "model_called": false,
+    "generated_content_absent_or_simulated": true,
+    "candidate_result_to_patch_only": true,
+    "teacher_review_required": true,
+    "formal_apply_performed": false
+  }
+}
