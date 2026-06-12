@@ -1,0 +1,25 @@
+{
+  "pilot_id": "art_teacher_daily_work_pilot",
+  "teacher_role": "primary_school_art_teacher",
+  "first_identity_guardrail": "teacher_work_state_driven_intelligent_organization_system",
+  "required_minimum_scenarios": [
+    "today_entry",
+    "single_lesson_focus_surface",
+    "lesson_design_draft_confirmation",
+    "handout_candidate_generation",
+    "candidate_result_to_work_object_patch",
+    "teacher_review_gate_stop"
+  ],
+  "explicitly_out_of_scope": [
+    "classroom_teaching_studio",
+    "public_display_surface",
+    "teacher_control_surface",
+    "student_side_runtime",
+    "student_evaluation_analysis_board",
+    "formal_resource_library",
+    "formal_export",
+    "real_provider_model_call"
+  ],
+  "final_stop": "teacher_review_required",
+  "formal_apply_performed": false
+}
