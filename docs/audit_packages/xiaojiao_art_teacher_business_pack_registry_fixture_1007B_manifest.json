@@ -1,0 +1,20 @@
+{
+  "stage": "1007B_ART_TEACHER_BUSINESS_PACK_REGISTRY_FIXTURE",
+  "final_status": "XIAOJIAO_ART_TEACHER_BUSINESS_PACK_REGISTRY_FIXTURE_PASS",
+  "zip_path": "docs/audit_packages/xiaojiao_art_teacher_business_pack_registry_fixture_1007B.zip",
+  "zip_sha256": "EXTERNAL_RECOMPUTATION_RECORDED_IN_README",
+  "zip_entry_count": 7,
+  "zip_entries": [
+    "docs/foundation/xiaojiao_art_teacher_business_pack_registry_fixture_1007B.md",
+    "docs/foundation/xiaojiao_art_teacher_business_pack_registry_fixture_1007B.json",
+    "samples/xiaojiao_art_teacher_business_pack_registry_fixture_1007B/art_teacher_business_pack_registry_fixture_1007B.json",
+    "scripts/validate_xiaojiao_art_teacher_business_pack_registry_fixture_1007B.py",
+    "docs/audit/xiaojiao_art_teacher_business_pack_registry_fixture_1007B_result.json",
+    "docs/audit/xiaojiao_art_teacher_business_pack_registry_fixture_1007B_report.md",
+    "docs/audit_packages/xiaojiao_art_teacher_business_pack_registry_fixture_1007B_manifest.json"
+  ],
+  "manifest_minus_zip": [],
+  "zip_minus_manifest": [],
+  "forbidden_files_present": [],
+  "marker": "ALL_1007B_ART_TEACHER_BUSINESS_PACK_REGISTRY_FIXTURE_CHECKS_OK"
+}
