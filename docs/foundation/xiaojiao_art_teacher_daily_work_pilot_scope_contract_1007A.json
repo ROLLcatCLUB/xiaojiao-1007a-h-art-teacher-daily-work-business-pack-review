@@ -1,0 +1,65 @@
+{
+  "stage": "1007A_ART_TEACHER_DAILY_WORK_PILOT_SCOPE_CONTRACT",
+  "final_status": "XIAOJIAO_ART_TEACHER_DAILY_WORK_PILOT_SCOPE_CONTRACT_PASS",
+  "package_type": "scope_contract",
+  "current_product_identity": "teacher_work_state_driven_intelligent_organization_system",
+  "inherits_from": [
+    "1001_STATE_DRIVEN_INTELLIGENCE_ENGINE_FIXTURE_BASELINE_PASS",
+    "1000F_I_MODEL_CANDIDATE_RESOURCE_CONTEXT_FIXTURE_BASELINE_PASS",
+    "1002B_PROGRESSIVE_SURFACE_MODE_AND_BUSINESS_PACK_LAYOUT_PRESET_FIXTURE_PASS",
+    "1005A_PRODUCT_POSITIONING_AND_DIFFERENTIATION_CONTRACT_PASS",
+    "1006A_H_MINIMUM_RUNTIME_FOUNDATION_END_TO_END_DRY_RUN_PASS"
+  ],
+  "business_line": "art_teacher_daily_work",
+  "primary_business_pack": "art_teacher_daily_work_pack",
+  "stage_scope": {
+    "pilot_id": "art_teacher_daily_work_pilot",
+    "teacher_role": "primary_school_art_teacher",
+    "first_identity_guardrail": "teacher_work_state_driven_intelligent_organization_system",
+    "required_minimum_scenarios": [
+      "today_entry",
+      "single_lesson_focus_surface",
+      "lesson_design_draft_confirmation",
+      "handout_candidate_generation",
+      "candidate_result_to_work_object_patch",
+      "teacher_review_gate_stop"
+    ],
+    "explicitly_out_of_scope": [
+      "classroom_teaching_studio",
+      "public_display_surface",
+      "teacher_control_surface",
+      "student_side_runtime",
+      "student_evaluation_analysis_board",
+      "formal_resource_library",
+      "formal_export",
+      "real_provider_model_call"
+    ],
+    "final_stop": "teacher_review_required",
+    "formal_apply_performed": false
+  },
+  "hard_boundaries": {
+    "provider_called": false,
+    "model_called": false,
+    "api_key_configured": false,
+    "real_database_written": false,
+    "database_written": false,
+    "real_memory_written": false,
+    "memory_written": false,
+    "Feishu_written": false,
+    "formal_export_created": false,
+    "real_frontend_runtime_modified": false,
+    "real_frontend_modified": false,
+    "teacher_control_runtime_entered": false,
+    "public_display_runtime_entered": false,
+    "student_side_runtime_entered": false,
+    "production_generation_performed": false,
+    "formal_writeback_performed": false,
+    "formal_apply_performed": false,
+    "real_classroom_delivery_entered": false,
+    "real_resource_library_connected": false,
+    "production_dependency_installed": false,
+    "teacher_review_required_stop": true
+  },
+  "stop_rule": "Do not enter real art teacher business apply; stop at teacher_review_required before formal apply.",
+  "next_stage": "1007A_COMPLETE_CONTINUE_WITHIN_1007_PACKAGE"
+}
