@@ -1,0 +1,82 @@
+{
+  "stage": "1007G_ART_TEACHER_RENDER_DIRECTIVE_AND_SURFACE_MODE_FIXTURE",
+  "final_status": "XIAOJIAO_ART_TEACHER_RENDER_DIRECTIVE_AND_SURFACE_MODE_FIXTURE_PASS",
+  "package_type": "render_directive",
+  "current_product_identity": "teacher_work_state_driven_intelligent_organization_system",
+  "inherits_from": [
+    "1001_STATE_DRIVEN_INTELLIGENCE_ENGINE_FIXTURE_BASELINE_PASS",
+    "1000F_I_MODEL_CANDIDATE_RESOURCE_CONTEXT_FIXTURE_BASELINE_PASS",
+    "1002B_PROGRESSIVE_SURFACE_MODE_AND_BUSINESS_PACK_LAYOUT_PRESET_FIXTURE_PASS",
+    "1005A_PRODUCT_POSITIONING_AND_DIFFERENTIATION_CONTRACT_PASS",
+    "1006A_H_MINIMUM_RUNTIME_FOUNDATION_END_TO_END_DRY_RUN_PASS"
+  ],
+  "business_line": "art_teacher_daily_work",
+  "primary_business_pack": "art_teacher_daily_work_pack",
+  "stage_scope": {
+    "directive_registry_id": "art_teacher_render_directive_1007G",
+    "directives": {
+      "light_entry_today_directive": {
+        "surface_mode": "light_entry",
+        "primary_object": "today_work_items",
+        "visible": [
+          "today_summary",
+          "priority_item",
+          "agent_suggestion",
+          "two_actions"
+        ]
+      },
+      "focus_surface_lesson_directive": {
+        "surface_mode": "focus_surface",
+        "primary_object": "art_lesson_design",
+        "supporting": [
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref"
+        ],
+        "agent_note_attached_to": "lesson_structure.section_2"
+      },
+      "guided_review_directive": {
+        "surface_mode": "focus_surface",
+        "primary_object": "work_object_patch",
+        "review_required": true,
+        "available_teacher_actions": [
+          "accept_patch",
+          "reject_patch",
+          "request_revision"
+        ]
+      }
+    },
+    "teacher_review_projection": "guided_review_directive is the front-end projection for teacher_review_required work_object_patch state",
+    "boundaries": [
+      "no_final_visual",
+      "no_grid_dependency_install",
+      "no_real_frontend_modification",
+      "render_directive_is_frontend_projection_input"
+    ]
+  },
+  "hard_boundaries": {
+    "provider_called": false,
+    "model_called": false,
+    "api_key_configured": false,
+    "real_database_written": false,
+    "database_written": false,
+    "real_memory_written": false,
+    "memory_written": false,
+    "Feishu_written": false,
+    "formal_export_created": false,
+    "real_frontend_runtime_modified": false,
+    "real_frontend_modified": false,
+    "teacher_control_runtime_entered": false,
+    "public_display_runtime_entered": false,
+    "student_side_runtime_entered": false,
+    "production_generation_performed": false,
+    "formal_writeback_performed": false,
+    "formal_apply_performed": false,
+    "real_classroom_delivery_entered": false,
+    "real_resource_library_connected": false,
+    "production_dependency_installed": false,
+    "teacher_review_required_stop": true
+  },
+  "stop_rule": "Do not enter real art teacher business apply; stop at teacher_review_required before formal apply.",
+  "next_stage": "1007G_COMPLETE_CONTINUE_WITHIN_1007_PACKAGE"
+}
