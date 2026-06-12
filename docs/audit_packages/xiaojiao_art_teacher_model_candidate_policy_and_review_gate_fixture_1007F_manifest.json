@@ -1,0 +1,20 @@
+{
+  "stage": "1007F_ART_TEACHER_MODEL_CANDIDATE_POLICY_AND_REVIEW_GATE_FIXTURE",
+  "final_status": "XIAOJIAO_ART_TEACHER_MODEL_CANDIDATE_POLICY_AND_REVIEW_GATE_FIXTURE_PASS",
+  "zip_path": "docs/audit_packages/xiaojiao_art_teacher_model_candidate_policy_and_review_gate_fixture_1007F.zip",
+  "zip_sha256": "EXTERNAL_RECOMPUTATION_RECORDED_IN_README",
+  "zip_entry_count": 7,
+  "zip_entries": [
+    "docs/foundation/xiaojiao_art_teacher_model_candidate_policy_and_review_gate_fixture_1007F.md",
+    "docs/foundation/xiaojiao_art_teacher_model_candidate_policy_and_review_gate_fixture_1007F.json",
+    "samples/xiaojiao_art_teacher_model_candidate_policy_and_review_gate_fixture_1007F/art_teacher_model_candidate_policy_and_review_gate_fixture_1007F.json",
+    "scripts/validate_xiaojiao_art_teacher_model_candidate_policy_and_review_gate_fixture_1007F.py",
+    "docs/audit/xiaojiao_art_teacher_model_candidate_policy_and_review_gate_fixture_1007F_result.json",
+    "docs/audit/xiaojiao_art_teacher_model_candidate_policy_and_review_gate_fixture_1007F_report.md",
+    "docs/audit_packages/xiaojiao_art_teacher_model_candidate_policy_and_review_gate_fixture_1007F_manifest.json"
+  ],
+  "manifest_minus_zip": [],
+  "zip_minus_manifest": [],
+  "forbidden_files_present": [],
+  "marker": "ALL_1007F_ART_TEACHER_MODEL_CANDIDATE_POLICY_AND_REVIEW_GATE_FIXTURE_CHECKS_OK"
+}
