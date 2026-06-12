@@ -1,0 +1,39 @@
+{
+  "stage": "1007F_ART_TEACHER_MODEL_CANDIDATE_POLICY_AND_REVIEW_GATE_FIXTURE",
+  "final_status": "XIAOJIAO_ART_TEACHER_MODEL_CANDIDATE_POLICY_AND_REVIEW_GATE_FIXTURE_PASS",
+  "pass": true,
+  "marker": "ALL_1007F_ART_TEACHER_MODEL_CANDIDATE_POLICY_AND_REVIEW_GATE_FIXTURE_CHECKS_OK",
+  "package_type": "model_candidate_policy",
+  "business_pack": "art_teacher_daily_work_pack",
+  "boundary_flags": {
+    "provider_called": false,
+    "model_called": false,
+    "api_key_configured": false,
+    "real_database_written": false,
+    "database_written": false,
+    "real_memory_written": false,
+    "memory_written": false,
+    "Feishu_written": false,
+    "formal_export_created": false,
+    "real_frontend_runtime_modified": false,
+    "real_frontend_modified": false,
+    "teacher_control_runtime_entered": false,
+    "public_display_runtime_entered": false,
+    "student_side_runtime_entered": false,
+    "production_generation_performed": false,
+    "formal_writeback_performed": false,
+    "formal_apply_performed": false,
+    "real_classroom_delivery_entered": false,
+    "real_resource_library_connected": false,
+    "production_dependency_installed": false,
+    "teacher_review_required_stop": true
+  },
+  "validation": {
+    "py_compile": "PASS",
+    "validator_no_arg": "PASS",
+    "validator_root": "PASS",
+    "manifest_minus_zip": [],
+    "zip_minus_manifest": []
+  },
+  "next_stage": "1007F_COMPLETE_CONTINUE_WITHIN_1007_PACKAGE"
+}
