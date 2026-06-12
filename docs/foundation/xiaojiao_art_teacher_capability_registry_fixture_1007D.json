@@ -1,0 +1,521 @@
+{
+  "stage": "1007D_ART_TEACHER_CAPABILITY_REGISTRY_FIXTURE",
+  "final_status": "XIAOJIAO_ART_TEACHER_CAPABILITY_REGISTRY_FIXTURE_PASS",
+  "package_type": "capability_registry",
+  "current_product_identity": "teacher_work_state_driven_intelligent_organization_system",
+  "inherits_from": [
+    "1001_STATE_DRIVEN_INTELLIGENCE_ENGINE_FIXTURE_BASELINE_PASS",
+    "1000F_I_MODEL_CANDIDATE_RESOURCE_CONTEXT_FIXTURE_BASELINE_PASS",
+    "1002B_PROGRESSIVE_SURFACE_MODE_AND_BUSINESS_PACK_LAYOUT_PRESET_FIXTURE_PASS",
+    "1005A_PRODUCT_POSITIONING_AND_DIFFERENTIATION_CONTRACT_PASS",
+    "1006A_H_MINIMUM_RUNTIME_FOUNDATION_END_TO_END_DRY_RUN_PASS"
+  ],
+  "business_line": "art_teacher_daily_work",
+  "primary_business_pack": "art_teacher_daily_work_pack",
+  "stage_scope": {
+    "registry_id": "art_teacher_capability_registry_1007D",
+    "capabilities": [
+      {
+        "capability_id": "view_today_work",
+        "business_pack_id": "art_teacher_daily_work_pack",
+        "trigger_intents": [
+          "view_today_work"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": false,
+        "context_pack_policy_ref": "none_or_minimal",
+        "review_gate_policy": "not_required_for_zero_token_fixture",
+        "token_cost_policy": "0_token_deterministic",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "open_lesson_focus",
+        "business_pack_id": "art_lesson_design_pack",
+        "trigger_intents": [
+          "open_lesson_focus"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": false,
+        "context_pack_policy_ref": "none_or_minimal",
+        "review_gate_policy": "not_required_for_zero_token_fixture",
+        "token_cost_policy": "0_token_deterministic",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "inspect_pending_lesson_draft",
+        "business_pack_id": "art_lesson_design_pack",
+        "trigger_intents": [
+          "inspect_pending_lesson_draft"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": false,
+        "context_pack_policy_ref": "none_or_minimal",
+        "review_gate_policy": "not_required_for_zero_token_fixture",
+        "token_cost_policy": "0_token_deterministic",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "confirm_lesson_draft",
+        "business_pack_id": "art_lesson_design_pack",
+        "trigger_intents": [
+          "confirm_lesson_draft"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": false,
+        "context_pack_policy_ref": "none_or_minimal",
+        "review_gate_policy": "not_required_for_zero_token_fixture",
+        "token_cost_policy": "0_token_deterministic",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "defer_current_item",
+        "business_pack_id": "art_teacher_daily_work_pack",
+        "trigger_intents": [
+          "defer_current_item"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": false,
+        "context_pack_policy_ref": "none_or_minimal",
+        "review_gate_policy": "not_required_for_zero_token_fixture",
+        "token_cost_policy": "0_token_deterministic",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "attach_resource_ref",
+        "business_pack_id": "art_resource_support_pack",
+        "trigger_intents": [
+          "attach_resource_ref"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": false,
+        "context_pack_policy_ref": "none_or_minimal",
+        "review_gate_policy": "not_required_for_zero_token_fixture",
+        "token_cost_policy": "0_token_deterministic",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "open_resource_picker",
+        "business_pack_id": "art_resource_support_pack",
+        "trigger_intents": [
+          "open_resource_picker"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": false,
+        "context_pack_policy_ref": "none_or_minimal",
+        "review_gate_policy": "not_required_for_zero_token_fixture",
+        "token_cost_policy": "0_token_deterministic",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "generate_handout_candidate",
+        "business_pack_id": "art_handout_pack",
+        "trigger_intents": [
+          "generate_handout_candidate"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": true,
+        "context_pack_policy_ref": "trimmed_context_pack_policy",
+        "review_gate_policy": "teacher_review_required",
+        "token_cost_policy": "model_candidate_envelope_created_but_token_cost_0_in_fixture",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "generate_rubric_candidate",
+        "business_pack_id": "art_rubric_pack",
+        "trigger_intents": [
+          "generate_rubric_candidate"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": true,
+        "context_pack_policy_ref": "trimmed_context_pack_policy",
+        "review_gate_policy": "teacher_review_required",
+        "token_cost_policy": "model_candidate_envelope_created_but_token_cost_0_in_fixture",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "revise_lesson_section_candidate",
+        "business_pack_id": "art_lesson_design_pack",
+        "trigger_intents": [
+          "revise_lesson_section_candidate"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": true,
+        "context_pack_policy_ref": "trimmed_context_pack_policy",
+        "review_gate_policy": "teacher_review_required",
+        "token_cost_policy": "model_candidate_envelope_created_but_token_cost_0_in_fixture",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "create_work_object_patch",
+        "business_pack_id": "art_teacher_daily_work_pack",
+        "trigger_intents": [
+          "create_work_object_patch"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": false,
+        "context_pack_policy_ref": "none_or_minimal",
+        "review_gate_policy": "teacher_review_required",
+        "token_cost_policy": "0_token_deterministic",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      },
+      {
+        "capability_id": "enter_teacher_review_gate",
+        "business_pack_id": "art_teacher_daily_work_pack",
+        "trigger_intents": [
+          "enter_teacher_review_gate"
+        ],
+        "target_work_object_types": [
+          "today_work_items",
+          "art_lesson_design",
+          "art_handout",
+          "art_rubric",
+          "art_resource_ref",
+          "work_object_patch"
+        ],
+        "input_schema": "registered_fixture_input",
+        "output_schema": "registered_fixture_output",
+        "action_gate_policy": "required",
+        "model_candidate_required": false,
+        "context_pack_policy_ref": "none_or_minimal",
+        "review_gate_policy": "teacher_review_required",
+        "token_cost_policy": "0_token_deterministic",
+        "allowed_surface_modes": [
+          "light_entry",
+          "focus_surface",
+          "support_layer",
+          "resource_drawer",
+          "resource_picker"
+        ],
+        "forbidden_side_effects": [
+          "provider_call",
+          "model_call",
+          "database_write",
+          "memory_write",
+          "Feishu_write",
+          "frontend_runtime_modification",
+          "formal_writeback"
+        ]
+      }
+    ],
+    "capability_groups": {
+      "zero_token_deterministic": [
+        "view_today_work",
+        "open_lesson_focus",
+        "inspect_pending_lesson_draft",
+        "confirm_lesson_draft",
+        "defer_current_item",
+        "attach_resource_ref",
+        "open_resource_picker"
+      ],
+      "model_candidate": [
+        "generate_handout_candidate",
+        "generate_rubric_candidate",
+        "revise_lesson_section_candidate"
+      ],
+      "review_patch": [
+        "create_work_object_patch",
+        "enter_teacher_review_gate"
+      ]
+    }
+  },
+  "hard_boundaries": {
+    "provider_called": false,
+    "model_called": false,
+    "api_key_configured": false,
+    "real_database_written": false,
+    "database_written": false,
+    "real_memory_written": false,
+    "memory_written": false,
+    "Feishu_written": false,
+    "formal_export_created": false,
+    "real_frontend_runtime_modified": false,
+    "real_frontend_modified": false,
+    "teacher_control_runtime_entered": false,
+    "public_display_runtime_entered": false,
+    "student_side_runtime_entered": false,
+    "production_generation_performed": false,
+    "formal_writeback_performed": false,
+    "formal_apply_performed": false,
+    "real_classroom_delivery_entered": false,
+    "real_resource_library_connected": false,
+    "production_dependency_installed": false,
+    "teacher_review_required_stop": true
+  },
+  "stop_rule": "Do not enter real art teacher business apply; stop at teacher_review_required before formal apply.",
+  "next_stage": "1007D_COMPLETE_CONTINUE_WITHIN_1007_PACKAGE"
+}
