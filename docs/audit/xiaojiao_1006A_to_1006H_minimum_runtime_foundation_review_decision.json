@@ -1,0 +1,28 @@
+{
+  "stage": "1006A_TO_1006H_MINIMUM_RUNTIME_FOUNDATION_REVIEW_DECISION",
+  "overall_decision": "ACCEPT",
+  "overall_status": "1006A_H_MINIMUM_RUNTIME_FOUNDATION_BASELINE_PASS",
+  "accepted_on": "2026-06-13",
+  "next_stage": "1007A_ART_TEACHER_DAILY_WORK_BUSINESS_PACK_PENDING_REVIEW",
+  "caveat": "SANDBOX_AND_DRY_RUN_ONLY_NOT_REAL_RUNTIME_APPLY",
+  "boundary_flags": {
+    "real_provider_model_call": false,
+    "api_key_configured": false,
+    "real_database_written": false,
+    "real_memory_written": false,
+    "Feishu_written": false,
+    "formal_export_created": false,
+    "real_frontend_runtime_modified": false,
+    "teacher_review_required_stop": true
+  },
+  "accepted_chain": [
+    "1006A",
+    "1006B",
+    "1006C",
+    "1006D",
+    "1006E",
+    "1006F",
+    "1006G",
+    "1006H"
+  ]
+}
