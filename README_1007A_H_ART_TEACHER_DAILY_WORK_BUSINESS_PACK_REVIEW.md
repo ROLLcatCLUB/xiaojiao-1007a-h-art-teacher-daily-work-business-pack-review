@@ -36,3 +36,12 @@ teacher_review_required_stop=true
 ```
 
 next_stage=1007H_REVIEW_PENDING_BEFORE_REAL_ART_TEACHER_BUSINESS_APPLY
+
+## Review Decision
+
+```text
+decision=ACCEPT
+review_decision_synced_to_github=true
+caveat=SANDBOX_FIXTURE_ONLY_NOT_REAL_BUSINESS_RUNTIME
+next_stage=1007I_ART_TEACHER_BUSINESS_PACK_PRODUCTIZED_PREVIEW_PENDING_REVIEW
+```
